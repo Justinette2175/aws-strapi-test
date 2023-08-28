@@ -8,8 +8,6 @@ module.exports = ({ env }) => ({
   webhooks: {
     populateRelations: env.bool("WEBHOOKS_POPULATE_RELATIONS", false),
   },
-  cron: { enabled: true },
-  cors: { enabled: true, origin: ["*"] },
   admin: {
     auth: {
       secret: env("ADMIN_JWT_SECRET", "9bf8cc74ab83590b280df0851beaec60"),
